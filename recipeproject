@@ -5,13 +5,28 @@
 </head>
 <body background=spices.jpg>
 
-<h1>SPICE IT UP</h1>
+  <h1><b><center>SPICE IT UP</center></b></h1>
 
-//button to app//
+  <br>
+  <br>
+  <br>
 
-//button to main//
+  <div style="text-align: center;">
+    <form method="get" action="appetizer"><button type="submit">Appetizer</button></form>
 
-//button to desserts//
+<br>
+<br>
+<br>
+
+
+<form method="get" action="maindish"><button type="submit">Main Dish</button></form>
+
+<br>
+<br>
+<br>
+
+<form method="get" action="dessert"><button type="submit">Dessert</button></form>
+    </div>
 
 </body>
 </html>
