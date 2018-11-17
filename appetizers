@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Appetizer Recipes</title>
+</head>
+
+<div style="text-align: center; background: white;">
+<br>
+<br>
+<br>
+<h1> Appetizers </h1>
+<br>
+<br>
+<ul style="list-style-type:circle">
+<li><a href= "lilicchi-spinichcheesedip";> Spinich Cheese Dip </href></li>
+<li><a href= "lilicchi-guacamole";> Chips and Guacamole </href></li>
+<li><a href= "lilicchi-mozzerellasticks";> Mozzerella Sticks </href></li>
+<li><a href= "lilicchi-sliders";> Sliders </href></li>
+<li><a href= "lilicchi-salad";> Salad </href></li>
+<li><a href= "lilicchi-garlicbread";> Garlic Bread </href></li>
+
+</div>
+</ul>
+</html>
