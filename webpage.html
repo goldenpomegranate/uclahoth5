@@ -2,6 +2,70 @@
 
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
 <title>Food Buddies</title>
 </head>
 
@@ -15,7 +79,32 @@
 <!-- login form -->  
 <form action="/action_page.php">
   <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar"
+    <img src="data:image/png;base64,
+              iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAMAAABlApw1AAAAdVBMVEUAAAD///
+              8VFRW1tbVAQEAiIiIYGBgQEBA5OTlQUFAaGhr39/fl5eUXFxfJycnv7+
+              9qamqHh4cpKSkwMDBYWFikpKSOjo5eXl7Z2dl+
+              fn4JCQmoqKjc3Nyampqurq43NzeVlZXDw8OAgIB3d3dHR0djY2MmJiZtBXkxAAAE
+              aklEQVR4nO2c6XaqMBSFTQAZZRBFnKu1ff9HvNJbCgkn1VqS2LX29zdxZW8znUxMJg
+              AAAAAAAAAAAAAAAAAAeDY2M29eum4Z2RbyM6ZuXjlpnWQsS+rUqXJ3Og2CP2Jittjv2JDdf
+              jHz3Kf3wPOUEN+S5rwMNrY1qokuh/gb+Q3x4RK5T2qBh9/9+b1qCPlTWgjru+Q31KFX2pYr
+              4zl3y29wvGBqW3Ifvr7V9mXiNT/aVt3h3df4RVLvaXpCmD2gn7EsnD/HrFA8JL+hiDzb4q+xzvJh/
+              Ywt+dy2fv6z0UfG4ZbHU/5I9+2T2q2Dze/+//91YLMf/Kb9tywje2PR4+NPn2Juaz4IR9HPWO
+              ja0e89Nn8NyTwrUcWvB6COlNuI7Naj6WdsHZjX7/00/vyO2ML64PczQB/
+              HMz0SjTUCtZgeifj968f7qLnZKhi7AkxXQTTeENqSRiar4DK6fsYuJofSgwYDB4MjKR9z
+              DmiJubmoNNegn7HcXDcevws3pMZWNjMt+hmbmWpDC00GFqbGob0mA3tTBqjzlzHYGVoVT
+              DXpZ2xqphO42gy4ZuYyPbNAg6GZoNJmoDJjQLEWi++PL1RZHTNNiJiH6yLwNxP/eL69zqnPR3+
+              y8YOCyJqa2ScdlJyseJs2vXHUV4dfQyVfJYNUM8GEXK7D+6l8+43+rZhVbozJzIgBaUNuKaer
+              O3klZ5U2hzMzizKx0BMfZFDtuDiDnPwk5jAhXzIQE82W05um2dCqvD2mX3yDUGRB5XglDbxSWcX2
+              pld4i1AkGb341Dgf+1TWyLIBxSqK6gWKWUqYVXTK7hBaED35U23olc4qnPLolN3RL1ERflFrNsV6Swg
+              NdcruuEMVFXErYmXBq07ZHf0S3+gaoLZOQ/oc6c2ugTVtgFoyKFqbcNCjU3ZHv0TFfiC17Fcs2YVdSp2yO/
+              olxj41uvvUVJz4VKQjThm6pf9HkEV2Avr0gDwBELqADQOJP5yLFcc3NR/Wli/G5ibky9FoNbwoQIdC16ls2
+              GGk0NuIfskAWx2lP1Z9/BTKt3ZXUgYrBljuCUvZlXpxH6/m7/2sg9HWjgG2jIKvxsFflPIbXniXNRpe1rFkgMXV0W90+
+              WVx6wJIVpQfLc4/VkRN2TJwJTltt6fBNsNPs1o0MA4wAAMwAAMwAAMwAAMwAAMwAAMwAAMwAAMwAAMwAAMwAAMwAAMw
+              AAMwAAMwAAMwAAMwAAMwAAMwAAMwAANqA6eb39lVs3NsP4TLqvfJJFJed83OwVp9FfYU8slU+K1pA3X+ee/bz6kb98mr/
+              5FGfgUh3pfe52+7dLMGDm7v9SwPT7L81t2ELwZvqJN172Gl/5Vu0EBSyA8fvHLZa9C7vH8pP7oIb/
+              vSlXRjP3IdswYGCj51tA26HqS/l18PpbfkN9jn+9iUgXh5VD4d/2jQ9YJ4eHutope4ub2u/
+              PjF1f4Y8m5DqutSw1CZgZ/fyJpreZavID+Opc9eAgAAAAAAAAAAAAAAAADgb/EPoCBEdHtxUuwAAAAASUVORK5CYII=" 
+         alt="Avatar"
 class="avatar">
   </div>
   
