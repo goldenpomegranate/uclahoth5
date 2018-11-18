@@ -5,23 +5,23 @@
 <h2>Upload a New Recipe!</h2>
 
   Name:<br>
-  <input type="text" name="yourname" id="name" value=#>
+  <input type="text" name="yourname" id="name">
   <br>
   
   Recipe Title:<br>
-  <input type="text" id="title" name="title" value=#>
+  <input type="text" id="title" name="title">
   <br>
   
   Cook Time:<br>
-  <input type="text" id="cooktime" name="cooktime" value=#>
+  <input type="text" id="cooktime" name="cooktime">
   <br>
   
   Prep Time:<br>
-  <input type="text" id="preptime" name="preptime" value=#>
+  <input type="text" id="preptime" name="preptime">
   <br>
   
   Ready In:<br>
-  <input type="text" id="readyIn" name="readyIn" value=#>
+  <input type="text" id="readyIn" name="readyIn">
   <br><br>
   
   <!-- large text box for ingredients -->
@@ -35,6 +35,7 @@
   <br> 
   
   <!-- another large text box for steps -->
+  Steps:<br>
   <textarea 
     name="stepsList"
     id="steps"
@@ -91,15 +92,11 @@
       for (var i = 0; i < ingredientArray.length; i++)
         document.write(ingredientArray[i]);
       for (var j = 0; j < stepsArray.length; j++)
-        document.write(stepsArray[i]);  
-      
+        document.write(stepsArray[i]);   
     }
-    
   </script>
   
-  
-  
-  <div onclick="getData();">Submit</div>
+  <input type="submit" value="Submit">
 
 
 </body>
