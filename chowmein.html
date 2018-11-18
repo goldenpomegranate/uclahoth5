@@ -1,6 +1,46 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+  <title>Apple Pie</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0%;
+  font-family: courier;
+}
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  text-align: left;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+.navbar a.active {
+  background-color: orange;
+  color: white;
+}
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+</style>
+  </head>
+
+<body background= marble.jpg>
+<div style= "margin: 5% 10% 5% 10%; font-family: courier; background-color: white; padding: 15px">
 
 <h1>Chow Mein</h1>
 <p>Prep time: 20 min</p>
@@ -37,7 +77,13 @@
   Cook and stir until browned and no longer pink in the center, 5 to 6 minutes. 
   Remove chicken mixture to a plate. Cook and stir bok choy, zucchini, snap peas, and carrot in the hot skillet until softened, about 2 minutes. 
   Return noodles and chicken mixture to the skillet. Pour broth mixture into noodle mixture; cook and stir until warmed through, about 2 minutes. Serve garnished with green onions.</li>
-</ol>
+  </ol></div>
+  <div class="navbar">
+  <a href="webpage.html" class="active">Home</a>
+  <a href="appetizers.html">Appetizers</a>
+  <a href="maindishes.html">More Main Dishes</a>
+  <a href="desserts.html">Desserts</a>
+</div>
 
 </body>
 </html>
