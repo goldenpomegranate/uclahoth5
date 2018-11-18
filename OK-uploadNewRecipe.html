@@ -44,7 +44,8 @@
   
   <!-- get input info and generate a new webpage for it -->
   <script language="JavaScript">
-    function getData(){
+    function getData()
+    {
     
       var input_name = document.getElementById("name").value;
       var input_title = document.getElementById("title").value;
@@ -73,36 +74,22 @@
           stepsArray.push(stepsList.elements[i].value);
       }
     
-      <!-- function to generate new HTML website -->
       
-      function newSite(ingredientArray, stepsArray){
-      <!-- string concatenation to create new website's URL -->
-        window.location = './secondpage.html?title='+ input_name +'&name=namevariable'
-      
-        <html>
-          <body>
-          <h1>input_title</h1>
-          <p>Cook time: <span id="span1"></span></p>
-          <p>Prep time: <span id="span2"></span></p>
-          <p>Ready in: <span id="span3"></span></p>
-          
-          document.getElementById('span1').innerHTML=input_Cooktime;
-          document.getElementById('span2').innerHTML=input_Preptime;
-          document.getElementById('span3').innerHTML=input_Readyin;
-
-          <h2>Ingredients:</h2>
-          <ul style="list-style-type:square">
-          
-            <li> </li>
-          </ul>
-
-          <h2>Steps:</h2>
-          <ol type="1">
-            <li></li>
-          </ol>
-
-          </body>
-        </html>
+      <!-- confirm data inputted and "submit" to admin to check -->
+      <p id="double_check"</p>
+      <script> document.getElementById("double_check").innerHTML = "Please confirm that the information is correct: \n"
+      <p id="title"</p>
+      <script> document.getElementById("title").innerHTML = input_title;
+      <p id="cook"</p>
+      <script> document.getElementById("cook").innerHTML = input_Cooktime;
+      <p id="prep"></p>
+      <script> document.getElementById("prep").innerHTML = input_Preptime;
+      <p id="ready"></p>
+      <script> document.getElementById("ready").innerHTML = input_Readyin;
+      for (var i = 0; i < ingredientArray.length; i++)
+        document.write(ingredientArray[i]);
+      for (var j = 0; j < stepsArray.length; j++)
+        document.write(stepsArray[i]);  
       
     }
     
