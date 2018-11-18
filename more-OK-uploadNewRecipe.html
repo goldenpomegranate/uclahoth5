@@ -95,6 +95,22 @@
     getData();
   </script>
    
+  <form action="confirmation.php"
+        method="get">
+    Recipe title: <input type="text"
+                         name="title"><br>
+    Prep time: <input type="text"
+                      name="preptime"><br>
+    Cook time: <input type="text"
+                      name="cooktime"><br>
+    Ready in: <input type="text"
+                      name="readyIn"><br>
+    Ingredients: <input type="text"
+                      name="ingredientList"><br>
+    Steps: <input type="text"
+                      name="stepsList"><br>
+  </form>
+  
   <button type="button" 
           onclick="alert('Thank you for your submission!\n 
                    Your recipe has been sent for review by admin.')">Submit</button>
